@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Game - Prastuti</title>
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+  </head>
+  <body>
+    <div class="title-wrapper">
+      <h1 class="title">THE GREAT</h1>
+      <p class="rgb">rgb (251, 5, 229)</p>
+      <h1 class="title">COLOR GAME</h1>
+    </div>
+
+    <div class="level-wrapper">
+      <h3 class="new">NEW COLORS</h3>
+      <h3 class="note"></h3>
+      <h3 class="level l-easy">EASY</h3>
+      <h3 class="level l-hard">HARD</h3>
+    </div>
+
+    <div class="game-wrapper">
+      <div class="game">
+        <div class="easy">
+          <div class="box-e"></div>
+          <div class="box-e"></div>
+          <div class="box-e"></div>
+        </div>
+        <div class="hard">
+          <div class="box-h"></div>
+          <div class="box-h"></div>
+          <div class="box-h"></div>
+          <div class="box-h"></div>
+          <div class="box-h"></div>
+          <div class="box-h"></div>
+        </div>
+      </div>
+      <div class="rulestext">
+        <span class="rules" id="typed"></span>
+      </div>
+    </div>
+    <footer>&copy; to X-Men Team and <a href="https://www.prastuti.in/">Prastuti</a></footer>
+  
+    <script src="typed.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["Welcome to Color Guessing Game with RGB ^500", "There are two level Easy And Hard ^500","You Have to pick the color which matches with the given RGB value ^500","If you select the wrong tile color of that will turn black ^500","If you guess the right color All tile will be turn to that color <500" ],
+        loop: true,
+        typespeed:0,
+        backspeed:0,
+        
+      });
+    </script>
+  </body>
+</html>

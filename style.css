@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+@keyframes moveUp {
+    0%{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+  animation: moveUp 1s;
+}
+
+
+.title-wrapper{
+    background-image: linear-gradient(to right top , rgb(185,217,167) , rgba(255, 255, 255, 0.37)) , url(https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    color: #03045e;
+    font-weight: 700;
+    font-family: ubuntu , 'sans-serif';
+    padding: 20px 0px;
+}
+.title{
+    text-align: center;
+    font-size: 25px;
+}
+
+.rgb{
+    font-weight: 800;
+    padding: 20px;
+    text-align: center;
+    font-size: 70px;
+    color: #001219;
+}
+
+.level-wrapper{
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    padding:8px 0px;
+    color: #bc4139;
+ 
+}
+
+
+.l-easy{
+    margin-left: auto;
+}
+.new{
+    margin-right: auto;
+    cursor: pointer;
+    transition:  all .3s;
+}
+.level{
+    padding-right: 30px;
+}
+
+.game-wrapper{
+    background-color: #001219;
+    width: 100vw;
+    height: 450px;
+
+}
+
+.note{
+    color: #bc4139;
+}
+
+.game{
+    padding-top: 20px;
+}
+
+.easy{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.hard{
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+.l-easy , .l-hard{
+    cursor: pointer;
+    transition:  all .3s;
+}
+.easy,.hard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box-e , .box-h{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    transition: all .3s;
+    margin: 20px;
+    
+
+}
+
+.hard{
+    display: none;
+}
+
+.new:hover, .l-easy:hover, .l-hard:hover{
+    transform: scale(1.2) rotate(5deg);
+   
+}
+
+.box-e:hover , .box-h:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 60px rgba(255, 255, 255, 0.459);
+}
+
+.box-e:active , .box-h:active{
+    transform: none;
+    box-shadow:  0 10px 10px rgba(255, 255, 255, 0.459);
+}
+
+@media (max-width:630px) {
+
+    .note{
+        font-size: 10px;
+    }
+    .level{
+        font-size: 10px;
+    }
+    .new{
+        font-size: 10px;
+    }
+    .rgb{
+        font-size: 35px;
+    }
+
+    .box-e,.box-h{
+        width: 80px;
+        height: 80px;
+    }
+
+    .hard{
+        width: 380px;
+    }
+    
+}
+
+@media (max-width:350px) {
+
+    .hard{
+        width: 280px;
+    }
+
+    .box-e,.box-h{
+        width: 50px;
+        height: 50px;
+    }
+    
+}
+
+.rulestext{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+footer{
+    background-color: #001219;
+    height: 39px;
+    text-align: center;
+    width: 100vw;
+    color: wheat;
+}
+
+
+a{
+    color: white;
+    transform: scale(1.02);
+    text-decoration: none;
+}
+
+.rulestext{
+    margin-top: 100px;
+}
+
+
+
