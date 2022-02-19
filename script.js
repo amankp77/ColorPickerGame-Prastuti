@@ -88,9 +88,11 @@ boxesHard.forEach((box,idx) => {
       processOn.forEach((boxin) => {
         note.innerHTML = 'Congratulations You Guessed it Right!!'
         boxin.style.backgroundColor = answerrgb;
+        boxin.classList.add('enable')
       });
     } else {
-      box.style.backgroundColor = "black";
+      box.style.backgroundColor = "#001219"
+      box.classList.remove('enable')
       note.innerHTML = "Try Again"
     }
   });
@@ -102,9 +104,12 @@ boxesEasy.forEach((box, idx) => {
       processOn.forEach((boxin) => {
         note.innerHTML = 'Congratulations You Guessed it Right!!'
         boxin.style.backgroundColor = answerrgb;
+        boxin.classList.add('enable')
+
       });
     } else {
-      box.style.backgroundColor = "black";
+      box.style.backgroundColor = "#001219"
+      box.classList.remove('enable')
       note.innerHTML = "Try Again"
       
     }

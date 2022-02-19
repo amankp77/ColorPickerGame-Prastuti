@@ -124,7 +124,7 @@ body{
    
 }
 
-.box-e:hover , .box-h:hover{
+.enable:hover{
     transform: scale(1.1);
     box-shadow: 0 10px 60px rgba(255, 255, 255, 0.459);
 }
