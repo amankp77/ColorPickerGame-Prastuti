@@ -8,6 +8,7 @@ const conteasy = document.querySelector(".easy");
 const conthard = document.querySelector(".hard");
 const note = document.querySelector(".note")
 const rules = document.querySelector(".rulestext")
+ 
 
 // Math.random() * 256) + 1
 let r = 0;
@@ -84,6 +85,7 @@ hard.addEventListener("click", () => {
 
 boxesHard.forEach((box,idx) => {
   box.addEventListener("click", () => {
+
     if (box.style.backgroundColor.replaceAll(" ", "") == answerrgb) {
       processOn.forEach((boxin) => {
         note.innerHTML = 'Congratulations You Guessed it Right!!'
@@ -94,6 +96,10 @@ boxesHard.forEach((box,idx) => {
       box.style.backgroundColor = "#001219"
       box.classList.remove('enable')
       note.innerHTML = "Try Again"
+      note.classList.add("shake")
+      setTimeout(() => {
+      note.classList.remove("shake")
+      }, 820);
     }
   });
 });
@@ -111,6 +117,11 @@ boxesEasy.forEach((box, idx) => {
       box.style.backgroundColor = "#001219"
       box.classList.remove('enable')
       note.innerHTML = "Try Again"
+      note.classList.add("shake")
+      note.classList.add("shake")
+      setTimeout(() => {
+      note.classList.remove("shake")
+      }, 820);
       
     }
   });
